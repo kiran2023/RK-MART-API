@@ -34,7 +34,7 @@ const getAllProducts = async (request, response) => {
     }
 
     let page = Number(request.query.page)||1;
-    let limit = Number(request.query.limit)||5;
+    let limit = Number(request.query.limit)||30;
 
     let displayProductsPerPage = (page-1) * limit;
 
